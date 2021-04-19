@@ -1,4 +1,7 @@
-import {contextBridge} from 'electron';
+import { contextBridge, ipcRenderer } from 'electron';
+import { registerElectronIpc } from './comlink';
+
+registerElectronIpc(ipcRenderer);
 
 const apiKey = 'electron';
 /**

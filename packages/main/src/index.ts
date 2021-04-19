@@ -5,6 +5,9 @@
 import {app, BrowserWindow} from 'electron';
 import {join} from 'path';
 import {URL} from 'url';
+import { runAll } from './example';
+
+runAll();
 
   /**
    * Workaround for TypeScript bug
